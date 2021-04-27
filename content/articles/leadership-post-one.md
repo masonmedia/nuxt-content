@@ -1,7 +1,7 @@
 ---
 title: Leadership Post One
 description: Leadership is rad
-img: https://source.unsplash.com/1600x900/?nature
+img: https://source.unsplash.com/1600x900/?snow
 alt: my first blog post
 tags: leadership
 author:

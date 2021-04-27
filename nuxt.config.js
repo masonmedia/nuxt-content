@@ -1,9 +1,9 @@
 export default {
   //deployment gh-pages
-  target: 'static',
-  router: {
-    base: '/nuxt-content/'
-  },
+  // target: 'static',
+  // router: {
+  //   base: '/nuxt-content/'
+  // },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt_content',

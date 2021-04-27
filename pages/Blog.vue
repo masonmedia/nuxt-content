@@ -3,8 +3,9 @@
   fluid
   contClass="mt-5"
   rowClass="p-5">
-    <b-col xl="12" class="mb-5">
+    <b-col xl="12" class="">
         <h1 class="font-weight-bold">Posts</h1>
+        <hr class="text-secondary mb-4" />
     </b-col>
     
     <b-col lg="6" 
@@ -29,6 +30,7 @@
                     <b-card-text>
                         <p class="">{{ article.description }}</p>
                         <p class="text-muted">by {{ article.author.name }}</p>
+                        <p class="small">{{ article.tags }}</p>
                     </b-card-text>
                     </b-card-body>
                 </b-col>
@@ -62,7 +64,7 @@
       name: 'Blog',
         async asyncData({ $content, params }) {
         const articles = await $content('articles')
-            .only(['title', 'description', 'img', 'slug', 'author'])
+            .only(['title', 'description', 'img', 'slug', 'author', 'tags'])
             .sortBy('createdAt', 'asc')
             .fetch()
             // const tags = await $content('tags', params.slug)
